@@ -1,0 +1,3 @@
+//com.google.eclipse.mechanic.internal.PreferenceFileTaskScanner$LastmodEpfTask@http\://github.cerner.com/phrecorddev/record-dev-ecosystem/raw/master/workspace-mechanic-config/record_scalariform.epf_lastmd5=-1642206918433442015
+eclipse.preferences.version=1
+mechanicSourceDirectories=["${user_homedir}/.eclipse/mechanic","http\://github.cerner.com/phrecorddev/record-dev-ecosystem/raw/master/workspace-mechanic-config/manifest.manifest"]

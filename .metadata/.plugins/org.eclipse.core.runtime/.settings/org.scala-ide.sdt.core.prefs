@@ -1,0 +1,12 @@
+eclipse.preferences.version=1
+formatter.alignSingleLineCaseStatements.maxArrowIndent=4
+formatter.formatXml=true
+formatter.indentLocalDefs=true
+formatter.indentPackageBlocks=true
+formatter.indentSpaces=2
+formatter.multilineScaladocCommentsStartOnFirstLine=true
+formatter.placeScaladocAsterisksBeneathSecondAsterisk=true
+formatter.preserveSpaceBeforeArguments=true
+formatter.spacesWithinPatternBinders=true
+org.scala-ide.sdt.core.diagnostic.askOnUpgrade=false
+org.scala-ide.sdt.core.diagnostic.currentPluginVersion=3.0.2.v-2_10-201310181157-0880865
