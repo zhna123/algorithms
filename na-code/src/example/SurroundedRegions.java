@@ -1,4 +1,4 @@
-package src.na;
+package example;
 
 public class SurroundedRegions {
 

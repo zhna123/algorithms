@@ -1,4 +1,4 @@
-package src.na;
+package example;
 
 import java.util.Arrays;
 import java.util.HashMap;
