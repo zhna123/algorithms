@@ -4,19 +4,16 @@ public class Point {
 
     private final int x;
     private final int y;
-    private int color;
+    private final int color;
 
-    public Point(final int x, final int y) {
+    public Point(final int x, final int y, final int color) {
         this.x = x;
         this.y = y;
+        this.color = color;
     }
 
     public int getColor() {
         return color;
-    }
-
-    public void setColor(final int color) {
-        this.color = color;
     }
 
     public int getX() {
