@@ -1,4 +1,4 @@
-package res.dfs;
+package res.tree;
 
 import java.util.List;
 

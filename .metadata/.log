@@ -857,3 +857,85 @@ java.io.FileNotFoundException: Directory '${user_homedir}/.eclipse/mechanic' doe
 	at com.google.eclipse.mechanic.MechanicService.access$2(MechanicService.java:167)
 	at com.google.eclipse.mechanic.MechanicService$ServiceJob.run(MechanicService.java:374)
 	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:53)
+!SESSION 2015-02-19 15:50:20.681 -----------------------------------------------
+eclipse.buildId=4.3.2.M20140221-1700
+java.version=1.7.0_71
+java.vendor=Oracle Corporation
+BootLoader constants: OS=macosx, ARCH=x86_64, WS=cocoa, NL=en_US
+Framework arguments:  -product org.eclipse.epp.package.standard.product -product org.eclipse.epp.package.standard.product -product org.eclipse.epp.package.standard.product -product org.eclipse.epp.package.standard.product -keyring /Users/nz026920/.eclipse_keyring -showlocation
+Command-line arguments:  -os macosx -ws cocoa -arch x86_64 -product org.eclipse.epp.package.standard.product -product org.eclipse.epp.package.standard.product -product org.eclipse.epp.package.standard.product -data /Users/nz026920/mygit/programming -product org.eclipse.epp.package.standard.product -keyring /Users/nz026920/.eclipse_keyring -showlocation
+
+!ENTRY org.eclipse.core.net 1 0 2015-02-19 15:50:30.233
+!MESSAGE System property http.nonProxyHosts has been set to local|*.local|169.254/16|*.169.254/16 by an external source. This value will be overwritten using the values from the preferences
+
+!ENTRY org.eclipse.jface 2 0 2015-02-19 15:50:30.923
+!MESSAGE Keybinding conflicts occurred.  They may interfere with normal accelerator operation.
+!SUBENTRY 1 org.eclipse.jface 2 0 2015-02-19 15:50:30.923
+!MESSAGE A conflict occurred for ALT+COMMAND+C:
+Binding(ALT+COMMAND+C,
+	ParameterizedCommand(Command(de.bastiankrol.startexplorer.copyResourcePathToClipboardFromResourceView,Copy Resource Path to Clipboard,
+		Copies the path of the resource to the clipboard,
+		Category(de.bastiankrol.startexplorer.commands.category,StartExplorer,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@1c1ed768,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(ALT+COMMAND+C,
+	ParameterizedCommand(Command(org.eclipse.jdt.ui.edit.text.java.modify.method.parameters,Change Method Signature,
+		Change method signature includes parameter names and parameter order,
+		Category(org.eclipse.jdt.ui.category.refactoring,Refactor - Java,Java Refactoring Actions,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@2ccffb44,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,cocoa,system)
+
+!ENTRY com.google.eclipse.mechanic 4 0 2015-02-19 15:51:04.746
+!MESSAGE Directory '${user_homedir}/.eclipse/mechanic' does not exist.
+!STACK 0
+java.io.FileNotFoundException: Directory '${user_homedir}/.eclipse/mechanic' does not exist.
+	at com.google.eclipse.mechanic.internal.FileTaskProvider.validateInitialization(FileTaskProvider.java:110)
+	at com.google.eclipse.mechanic.internal.FileTaskProvider.newInstance(FileTaskProvider.java:97)
+	at com.google.eclipse.mechanic.internal.FileTaskProvider.newInstance(FileTaskProvider.java:89)
+	at com.google.eclipse.mechanic.plugin.core.OldMechanicPreferences.toProvider(OldMechanicPreferences.java:109)
+	at com.google.eclipse.mechanic.plugin.core.OldMechanicPreferences.getTaskProviders(OldMechanicPreferences.java:83)
+	at com.google.eclipse.mechanic.internal.PreferenceResourceTaskProvider.get(PreferenceResourceTaskProvider.java:29)
+	at com.google.eclipse.mechanic.internal.PreferenceResourceTaskProvider.collectTaskReferences(PreferenceResourceTaskProvider.java:43)
+	at com.google.eclipse.mechanic.internal.ClassFileTaskScanner.scan(ClassFileTaskScanner.java:75)
+	at com.google.eclipse.mechanic.ResourceTaskScanner.scan(ResourceTaskScanner.java:40)
+	at com.google.eclipse.mechanic.internal.RootTaskScanner.scan(RootTaskScanner.java:50)
+	at com.google.eclipse.mechanic.MechanicService.updateTasks(MechanicService.java:273)
+	at com.google.eclipse.mechanic.MechanicService.update(MechanicService.java:237)
+	at com.google.eclipse.mechanic.MechanicService.run(MechanicService.java:172)
+	at com.google.eclipse.mechanic.MechanicService.access$2(MechanicService.java:167)
+	at com.google.eclipse.mechanic.MechanicService$ServiceJob.run(MechanicService.java:374)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:53)
+
+!ENTRY com.google.eclipse.mechanic 4 0 2015-02-24 10:07:58.266
+!MESSAGE Operation timed out
+!STACK 0
+java.net.ConnectException: Operation timed out
+	at java.net.PlainSocketImpl.socketConnect(Native Method)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:339)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:200)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:182)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:579)
+	at java.net.Socket.connect(Socket.java:528)
+	at sun.net.NetworkClient.doConnect(NetworkClient.java:180)
+	at sun.net.www.http.HttpClient.openServer(HttpClient.java:432)
+	at sun.net.www.http.HttpClient.openServer(HttpClient.java:527)
+	at sun.net.www.http.HttpClient.<init>(HttpClient.java:211)
+	at sun.net.www.http.HttpClient.New(HttpClient.java:308)
+	at sun.net.www.http.HttpClient.New(HttpClient.java:326)
+	at sun.net.www.protocol.http.HttpURLConnection.getNewHttpClient(HttpURLConnection.java:996)
+	at sun.net.www.protocol.http.HttpURLConnection.plainConnect(HttpURLConnection.java:932)
+	at sun.net.www.protocol.http.HttpURLConnection.connect(HttpURLConnection.java:850)
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream(HttpURLConnection.java:1300)
+	at java.net.URL.openStream(URL.java:1037)
+	at com.google.eclipse.mechanic.internal.StandardContentProvider.get(StandardContentProvider.java:12)
+	at com.google.eclipse.mechanic.internal.ThreadsafeUriContentCache$1.call(ThreadsafeUriContentCache.java:54)
+	at com.google.eclipse.mechanic.internal.ThreadsafeUriContentCache$1.call(ThreadsafeUriContentCache.java:1)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:262)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
