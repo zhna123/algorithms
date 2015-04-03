@@ -35,7 +35,7 @@ public class FloodFill2 {
             final Point p = stack.pop();
             screenBuffer[p.getX()][p.getY()] = newColor;
 
-            if (p.getX() + 1 < width) {
+            if (p.getX() + 1 < height) {
                 final Point p1 = new Point(p.getX() + 1, p.getY(), screenBuffer[p.getX() + 1][p.getY()]);
                 if (p1.getColor() == oldColor) {
                     stack.push(p1);
@@ -49,7 +49,7 @@ public class FloodFill2 {
                 }
             }
 
-            if (p.getY() + 1 < height) {
+            if (p.getY() + 1 < width) {
                 final Point p3 = new Point(p.getX(), p.getY() + 1, screenBuffer[p.getX()][p.getY() + 1]);
                 if (p3.getColor() == oldColor) {
                     stack.push(p3);
