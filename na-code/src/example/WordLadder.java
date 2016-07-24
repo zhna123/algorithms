@@ -24,7 +24,7 @@ import java.util.Queue;
  */
 public class WordLadder {
 
-    // bfs for shotest distance
+    // bfs for shotest distance; it is a tree issue
     public int ladderLength(final String start, final String end, final HashSet<String> dict) {
 
         if (start == null || start.isEmpty() || end == null || end.isEmpty() || dict == null || dict.isEmpty()) {
@@ -33,12 +33,13 @@ public class WordLadder {
 
         final Queue<String> queue = new LinkedList<String>();
         queue.add(start);
-        dict.remove(start);
+        dict.remove(start); // remember to remove the queued ones from dict
         int length = 1;
         while (!queue.isEmpty()) {
-            final int count = queue.size();
+            final int count = queue.size(); // have to get size first to get level; or the queue size will grow with program run
             // check 1 level
-            for (int i = 0; i < count; i++) {
+            for (int i = 0; i < count; i++) {   // level check is important step to decide path and length of path
+                                                // It represents BFS. We do one level after another level.(level by level)
                 final String current = queue.poll();
                 // check 1 word
                 for (int j = 0; j < current.length(); j++) {
@@ -49,9 +50,9 @@ public class WordLadder {
                         }
                         final char[] ch = current.toCharArray();
                         ch[j] = k;
-                        final String tmp = new String(ch);
+                        final String tmp = new String(ch); // get string from char array
                         // found end;
-                        if (tmp.equals(end)) {
+                        if (tmp.equals(end)) {    // remember to check succeed case.
                             return length + 1;
                         }
                         if (dict.contains(tmp)) {

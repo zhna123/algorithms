@@ -1,4 +1,4 @@
-package design.exercise4.heap;
+package design.exercise4.quicksort;
 
 /**
  * 4-16. [3] Use the partitioning idea of quicksort to give an algorithm that finds the median

@@ -17,6 +17,7 @@ public class SudokuSolver {
         helper(board, 0, 0);
     }
 
+    // main logic
     private boolean helper(final char[][] board, final int i, final int j) {
 
         // current row ends; go to next row
